@@ -21,6 +21,7 @@ try:
     ## Download
     best_stream.download()
     print(f'OK {best_stream.title}')
-except Exception:
+except Exception as e:
+    print(e)
     print(f'ERROR {url}')
 
