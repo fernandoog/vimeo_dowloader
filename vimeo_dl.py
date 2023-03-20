@@ -1,12 +1,12 @@
+#pip install git+https://github.com/yashrathi-git/vimeo_downloader
 import sys
 from vimeo_downloader import Vimeo
-
-if len(sys.argv) != 2:
-    raise ValueError('Please provide url.')
-print(f'Url is {sys.argv[1]}')
+print(f'Runnig {sys.argv}')
+if len(sys.argv) < 2:
+    raise ValueError('Please provide url. example https://vimeo.com/440801455')
 url = sys.argv[1]
 
-cookies = "".strip()
+cookies = """h=943fe8f867""".strip()
 
 try:
     v = Vimeo(
